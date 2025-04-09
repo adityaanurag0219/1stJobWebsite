@@ -21,7 +21,7 @@ const Home = () => {
       {/* Market Opportunity */}
       <Section title="2. Market Opportunity">
         <ul className="list-disc pl-6 text-left space-y-2">
-          <li>Gig economy to surpass $450B by 2027</li>
+          <li>Gig economy to surpass ₹450B by 2027</li>
           <li>30%+ of workforce is already in gig/part-time roles</li>
           <li>COVID-19 accelerated digital staffing transformation</li>
           <li>Traditional platforms are slow for real-time shifts</li>
@@ -29,12 +29,12 @@ const Home = () => {
       </Section>
 
       {/* Target Market Segments */}
-      <Section title="3. Target Market Segments">
+      {/* <Section title="3. Target Market Segments">
         <IndustryTable />
-      </Section>
+      </Section> */}
 
       {/* Target Personas */}
-      <Section title="4. Target Worker Personas">
+      <Section title="3. Who can join us">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           <PersonaCard title="Students" desc="Part-time flexible jobs" icon="🎓" />
           <PersonaCard title="Freelancers" desc="Productive use of downtime" icon="💼" />
@@ -43,7 +43,7 @@ const Home = () => {
       </Section>
 
       {/* Competitive Analysis */}
-      <Section title="5. Competitive Analysis">
+      {/* <Section title="5. Competitive Analysis">
         <ul className="list-disc pl-6 text-left space-y-1">
           <li>
             <strong>TaskRabbit:</strong> Local tasks, lacks business focus
@@ -58,19 +58,19 @@ const Home = () => {
         <p className="mt-4">
           <strong>Key Differentiator:</strong> Hyper-local, real-time gig matching across industries.
         </p>
-      </Section>
+      </Section> */}
 
       {/* Tech Features */}
-      <Section title="6. Technology & Features">
+      {/* <Section title="6. Technology & Features">
         <ul className="list-disc pl-6 text-left space-y-1">
           <li>Real-time matching with geo-location & skills</li>
           <li>Worker ratings, availability & shift alerts</li>
           <li>Automation: time tracking, payments, dashboards</li>
         </ul>
-      </Section>
+      </Section> */}
 
       {/* Challenges */}
-      <Section title="7. Challenges & Mitigations">
+      {/* <Section title="7. Challenges & Mitigations">
         <ul className="list-disc pl-6 text-left space-y-1">
           <li>
             <strong>Reliability:</strong> ID verification & ratings
@@ -85,25 +85,25 @@ const Home = () => {
             <strong>Demand Gaps:</strong> Predictive algorithms
           </li>
         </ul>
-      </Section>
+      </Section> */}
 
       {/* Market Validation */}
-      <Section title="8. Market Validation Ideas">
+      {/* <Section title="8. Market Validation Ideas">
         <ul className="list-disc pl-6 text-left space-y-1">
           <li>Start with pilot industries: restaurants & retail</li>
           <li>Manual matching → test assumptions</li>
           <li>User feedback loop to refine MVP</li>
         </ul>
-      </Section>
+      </Section> */}
 
       {/* Social & Economic Impact */}
-      <Section title="9. Social & Economic Impact">
+      {/* <Section title="9. Social & Economic Impact">
         <ul className="list-disc pl-6 text-left space-y-1">
           <li>Reduces underemployment</li>
           <li>Helps SMEs manage costs</li>
           <li>Empowers informal sector with dignity</li>
         </ul>
-      </Section>
+      </Section> */}
     </>
   );
 };
