@@ -231,9 +231,9 @@ const Home = () => {
       <Section title="Who Can Work with 1stJob">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           <PersonaCard title="Students" desc="Earn on your schedule" icon="🎓" />
-          <PersonaCard title="Freelancers & Gig Workers" desc="Make use of your free hours" icon="💼" />
+          <PersonaCard title="Freelancers" desc="Make use of your free hours" icon="💼" />
           <PersonaCard title="Semi-Skilled Laborers" desc="Find hourly or daily jobs" icon="🔧" />
-          <PersonaCard title="Retirees" desc="Stay active and earn" icon="👴" />
+          {/* <PersonaCard title="Retirees" desc="Stay active and earn" icon="👴" /> */}
           <PersonaCard title="Unemployed" desc="Earn with dignity and flexibility" icon="🔍" />
         </div>
       </Section>
@@ -271,7 +271,7 @@ const Home = () => {
       {/* Final CTA */}
       <Section title="Join the Movement">
         <p className="mb-4">
-          Let’s shape the future of work together. Whether you're a business needing help or someone ready to earn — <strong>1stJob is your opportunity engine.</strong>
+          Let’s shape the future of work together. Whether you're a business needing help or someone ready to earn — <strong>1stJob is here for your support</strong>
         </p>
         <Button className="mt-2">Get Started Now</Button>
       </Section>
