@@ -149,23 +149,25 @@
 
 
 
+
+
 import React from 'react';
 import HeroSlider from '../components/HeroSlider';
 import Section from '../components/Section';
 import IndustryTable from '../components/IndustryTable';
 import PersonaCard from '../components/PersonaCard';
-import { Button } from '../components/Button';
-import { motion } from 'framer-motion';
+import { Button } from '../components/Button'; // Assuming you're using shadcn/ui or similar
 
 const Home = () => {
   return (
     <>
       {/* Hero Section with Slider */}
+
       <HeroSlider />
 
-      {/* Headline and Subheadline */}
-      <section id="home">
-        <Section title="Revolutionizing the Future of Work">
+        {/* Headline and Subheadline */}
+
+        {/* <Section title="Revolutionizing the Future of Work">
           <p className="text-xl font-medium mb-4">
             Flexible Jobs. Real-Time Matching. Seamless Workforce Solutions.
           </p>
@@ -176,7 +178,7 @@ const Home = () => {
             <Button>Post a Job</Button>
             <Button variant="outline">Find a Shift</Button>
           </div>
-        </Section>
+        </Section> */}
       </section>
 
       {/* About Us with Image */}
