@@ -13,12 +13,12 @@ const HeroSlider = () => (
   <section className="relative my-6">
     <Slider
       autoplay
-      autoplaySpeed={3000}
+      autoplaySpeed={2000}
       dots
       infinite
       slidesToShow={1}
       slidesToScroll={1}
-      className="w-full h-[450px] max-w-7xl mx-auto rounded-xl overflow-hidden shadow-xl"
+      className="w-full h-[450px] max-w-5xl mx-auto rounded-xl overflow-hidden shadow-xl"
     >
       {images.map((img, index) => (
         <div key={index} className="relative">
