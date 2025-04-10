@@ -149,21 +149,18 @@
 
 
 
-
-
 import React from 'react';
 import HeroSlider from '../components/HeroSlider';
 import Section from '../components/Section';
 import IndustryTable from '../components/IndustryTable';
 import PersonaCard from '../components/PersonaCard';
-import { Button } from '../components/Button'; // Assuming you're using shadcn/ui or similar
+import { Button } from '../components/Button';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
     <>
-
       {/* Hero Section with Slider */}
-
       <HeroSlider />
 
       {/* Headline and Subheadline */}
@@ -177,23 +174,36 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button>Post a Job</Button>
-            <Button variant='outline'>Find a Shift</Button>
+            <Button variant="outline">Find a Shift</Button>
           </div>
         </Section>
       </section>
 
-      {/* About Us */}
+      {/* About Us with Image */}
       <section id="about">
         <Section title="About Us">
-          <p className="mb-4 font-medium text-lg">Powering Businesses, Empowering People.</p>
-          <p>
-            1stJob was born out of the need to bridge two pressing gaps: the fluctuating labor demands of service industries and the rising need for flexible income among job seekers. Our technology-driven platform matches businesses with qualified, available workers in real time—ensuring operational efficiency and economic empowerment.
-          </p>
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <motion.img
+              src= "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg"
+              alt="About Us"
+              className="rounded-xl shadow-md w-full md:w-1/2"
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            />
+            <div>
+              <p className="mb-4 font-medium text-lg">Powering Businesses, Empowering People.</p>
+              <p>
+                1stJob was born out of the need to bridge two pressing gaps: the fluctuating labor demands of service industries and the rising need for flexible income among job seekers. Our technology-driven platform matches businesses with qualified, available workers in real time—ensuring operational efficiency and economic empowerment.
+              </p>
+            </div>
+          </div>
         </Section>
       </section>
+
       {/* How It Works */}
       <Section title="How It Works">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h3 className="text-xl font-semibold mb-2">For Businesses</h3>
             <ul className="list-disc pl-6 space-y-2">
@@ -202,6 +212,14 @@ const Home = () => {
               <li>Pay only for what you need—no long-term commitments.</li>
             </ul>
           </div>
+          <motion.img
+            src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg"
+            alt="For Businesses"
+            className="rounded-xl shadow-md"
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          />
           <div>
             <h3 className="text-xl font-semibold mb-2">For Workers</h3>
             <ul className="list-disc pl-6 space-y-2">
@@ -210,42 +228,62 @@ const Home = () => {
               <li>Get paid fast for the hours you work.</li>
             </ul>
           </div>
+          <motion.img
+            src="https://images.pexels.com/photos/6169052/pexels-photo-6169052.jpeg"
+            alt="For Workers"
+            className="rounded-xl shadow-md"
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          />
         </div>
       </Section>
 
       {/* Key Features */}
-      <section id="features"></section>
-      <Section id="home" title="Key Features">
-        <ul className="list-disc pl-6 space-y-3">
-          <li> <strong>Real-Time Job Matching:</strong> AI-powered matching systems connect businesses and workers instantly based on location and skillset.</li>
-          <li> <strong>Flexible Workforce Access:</strong> Scale your team up or down as needed—with zero overhead stress.</li>
-          <li> <strong>Worker Empowerment:</strong> Students, freelancers, and retirees can earn on their own terms—whenever, wherever.</li>
-          <li> <strong>Ratings & Reviews:</strong> Build trust with transparent feedback for both businesses and workers.</li>
-        </ul>
+      <Section title="Key Features">
+        <div className="flex flex-col md:flex-row gap-6 items-center">
+          <motion.img
+            src="https://www.pexels.com/photo/people-gathered-inside-one-room-2678468/"
+            alt="Key Features"
+            className="rounded-xl shadow-md w-full md:w-1/2"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          />
+          <ul className="list-disc pl-6 space-y-3">
+            <li>
+              <strong>Real-Time Job Matching:</strong> AI-powered matching systems connect businesses and workers instantly based on location and skillset.
+            </li>
+            <li>
+              <strong>Flexible Workforce Access:</strong> Scale your team up or down as needed—with zero overhead stress.
+            </li>
+            <li>
+              <strong>Worker Empowerment:</strong> Students, freelancers, and retirees can earn on their own terms—whenever, wherever.
+            </li>
+            <li>
+              <strong>Ratings & Reviews:</strong> Build trust with transparent feedback for both businesses and workers.
+            </li>
+          </ul>
+        </div>
       </Section>
 
-      {/* Target Users */}
+      {/* Target Industries */}
       <Section title="Businesses We Serve">
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Restaurants & Cafes</li>
-          <li>Retail Stores</li>
-          <li>Event Management</li>
-          <li>Outsourced Staffing Agencies</li>
-        </ul>
+        <IndustryTable />
       </Section>
 
+      {/* Persona Cards */}
       <Section title="Who Can Work with 1stJob">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           <PersonaCard title="Students" desc="Earn on your schedule" icon="🎓" />
           <PersonaCard title="Freelancers" desc="Make use of your free hours" icon="💼" />
           <PersonaCard title="Semi-Skilled Laborers" desc="Find hourly or daily jobs" icon="🔧" />
-          {/* <PersonaCard title="Retirees" desc="Stay active and earn" icon="👴" /> */}
           <PersonaCard title="Unemployed" desc="Earn with dignity and flexibility" icon="🔍" />
         </div>
       </Section>
 
       {/* Why 1stJob */}
-       <section id="contact"></section>
+      <section id="contact"></section>
       <Section title="Why 1stJob?">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
@@ -277,10 +315,12 @@ const Home = () => {
 
       {/* Final CTA */}
       <Section title="Join the Movement">
-        <p className="mb-4">
-          Let’s shape the future of work together. Whether you're a business needing help or someone ready to earn — <strong>1stJob is here for your support</strong>
-        </p>
-        <Button className="mt-2">Get Started Now</Button>
+        <div className="text-center">
+          <p className="mb-4">
+            Let’s shape the future of work together. Whether you're a business needing help or someone ready to earn — <strong>1stJob is here for your support</strong>
+          </p>
+          <Button className="mt-2">Get Started Now</Button>
+        </div>
       </Section>
     </>
   );
