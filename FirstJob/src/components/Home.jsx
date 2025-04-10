@@ -163,12 +163,12 @@ const Home = () => {
     <>
 
       {/* Hero Section with Slider */}
-
-      <HeroSlider />
-
-      {/* Headline and Subheadline */}
       <section id="home">
-        <Section title="Revolutionizing the Future of Work">
+        <HeroSlider />
+
+        {/* Headline and Subheadline */}
+
+        {/* <Section title="Revolutionizing the Future of Work">
           <p className="text-xl font-medium mb-4">
             Flexible Jobs. Real-Time Matching. Seamless Workforce Solutions.
           </p>
@@ -179,7 +179,7 @@ const Home = () => {
             <Button>Post a Job</Button>
             <Button variant='outline'>Find a Shift</Button>
           </div>
-        </Section>
+        </Section> */}
       </section>
 
       {/* About Us */}
@@ -245,7 +245,7 @@ const Home = () => {
       </Section>
 
       {/* Why 1stJob */}
-       <section id="contact"></section>
+      <section id="contact"></section>
       <Section title="Why 1stJob?">
         <div className="grid md:grid-cols-3 gap-8">
           <div>

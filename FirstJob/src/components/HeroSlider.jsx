@@ -18,11 +18,11 @@ const HeroSlider = () => (
       infinite
       slidesToShow={1}
       slidesToScroll={1}
-      className="w-full h-[450px] max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl"
+      className="w-full h-[250px] max-w-7xl mx-auto rounded-xl overflow-hidden shadow-xl"
     >
       {images.map((img, index) => (
         <div key={index} className="relative">
-          <img src={img} alt={`slide-${index}`} className="w-full h-[450px] object-cover" />
+          <img src={img} alt={`slide-${index}`} className="w-full h-[250px] object-cover" />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
             <motion.h2
               className="text-4xl md:text-6xl font-bold drop-shadow-md"
