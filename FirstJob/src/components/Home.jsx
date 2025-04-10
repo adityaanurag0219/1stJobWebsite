@@ -211,10 +211,10 @@ const Home = () => {
       {/* Key Features */}
       <Section title="Key Features">
         <ul className="list-disc pl-6 space-y-3">
-          <li>✅ <strong>Real-Time Job Matching:</strong> AI-powered matching systems connect businesses and workers instantly based on location and skillset.</li>
-          <li>✅ <strong>Flexible Workforce Access:</strong> Scale your team up or down as needed—with zero overhead stress.</li>
-          <li>✅ <strong>Worker Empowerment:</strong> Students, freelancers, and retirees can earn on their own terms—whenever, wherever.</li>
-          <li>✅ <strong>Ratings & Reviews:</strong> Build trust with transparent feedback for both businesses and workers.</li>
+          <li> <strong>Real-Time Job Matching:</strong> AI-powered matching systems connect businesses and workers instantly based on location and skillset.</li>
+          <li> <strong>Flexible Workforce Access:</strong> Scale your team up or down as needed—with zero overhead stress.</li>
+          <li> <strong>Worker Empowerment:</strong> Students, freelancers, and retirees can earn on their own terms—whenever, wherever.</li>
+          <li> <strong>Ratings & Reviews:</strong> Build trust with transparent feedback for both businesses and workers.</li>
         </ul>
       </Section>
 
