@@ -161,31 +161,36 @@ import { Button } from '../components/Button'; // Assuming you're using shadcn/u
 const Home = () => {
   return (
     <>
+
       {/* Hero Section with Slider */}
+
       <HeroSlider />
 
       {/* Headline and Subheadline */}
-      <Section title="Revolutionizing the Future of Work">
-        <p className="text-xl font-medium mb-4">
-          Flexible Jobs. Real-Time Matching. Seamless Workforce Solutions.
-        </p>
-        <p className="mb-6">
-          1stJob is your go-to platform connecting businesses with peak-hour labor needs to individuals seeking flexible, short-term work opportunities.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Button>Post a Job</Button>
-          <Button variant='outline'>Find a Shift</Button>
-        </div>
-      </Section>
+      <section id="home">
+        <Section title="Revolutionizing the Future of Work">
+          <p className="text-xl font-medium mb-4">
+            Flexible Jobs. Real-Time Matching. Seamless Workforce Solutions.
+          </p>
+          <p className="mb-6">
+            1stJob is your go-to platform connecting businesses with peak-hour labor needs to individuals seeking flexible, short-term work opportunities.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button>Post a Job</Button>
+            <Button variant='outline'>Find a Shift</Button>
+          </div>
+        </Section>
+      </section>
 
       {/* About Us */}
-      <Section title="About Us">
-        <p className="mb-4 font-medium text-lg">Powering Businesses, Empowering People.</p>
-        <p>
-          1stJob was born out of the need to bridge two pressing gaps: the fluctuating labor demands of service industries and the rising need for flexible income among job seekers. Our technology-driven platform matches businesses with qualified, available workers in real time—ensuring operational efficiency and economic empowerment.
-        </p>
-      </Section>
-
+      <section id="about">
+        <Section title="About Us">
+          <p className="mb-4 font-medium text-lg">Powering Businesses, Empowering People.</p>
+          <p>
+            1stJob was born out of the need to bridge two pressing gaps: the fluctuating labor demands of service industries and the rising need for flexible income among job seekers. Our technology-driven platform matches businesses with qualified, available workers in real time—ensuring operational efficiency and economic empowerment.
+          </p>
+        </Section>
+      </section>
       {/* How It Works */}
       <Section title="How It Works">
         <div className="grid md:grid-cols-2 gap-8">
@@ -209,7 +214,8 @@ const Home = () => {
       </Section>
 
       {/* Key Features */}
-      <Section title="Key Features">
+      <section id="features"></section>
+      <Section id="home" title="Key Features">
         <ul className="list-disc pl-6 space-y-3">
           <li> <strong>Real-Time Job Matching:</strong> AI-powered matching systems connect businesses and workers instantly based on location and skillset.</li>
           <li> <strong>Flexible Workforce Access:</strong> Scale your team up or down as needed—with zero overhead stress.</li>
@@ -239,6 +245,7 @@ const Home = () => {
       </Section>
 
       {/* Why 1stJob */}
+       <section id="contact"></section>
       <Section title="Why 1stJob?">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
