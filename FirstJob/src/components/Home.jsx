@@ -150,8 +150,8 @@
 
 
 
-
 import React from 'react';
+import { motion } from 'framer-motion';
 import HeroSlider from '../components/HeroSlider';
 import Section from '../components/Section';
 import IndustryTable from '../components/IndustryTable';
@@ -162,31 +162,28 @@ const Home = () => {
   return (
     <>
       {/* Hero Section with Slider */}
-
       <HeroSlider />
 
-        {/* Headline and Subheadline */}
-
-        {/* <Section title="Revolutionizing the Future of Work">
-          <p className="text-xl font-medium mb-4">
-            Flexible Jobs. Real-Time Matching. Seamless Workforce Solutions.
-          </p>
-          <p className="mb-6">
-            1stJob is your go-to platform connecting businesses with peak-hour labor needs to individuals seeking flexible, short-term work opportunities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button>Post a Job</Button>
-            <Button variant="outline">Find a Shift</Button>
-          </div>
-        </Section> */}
-      </section>
+      {/* Headline and Subheadline */}
+      <Section title="Revolutionizing the Future of Work">
+        <p className="text-xl font-medium mb-4">
+          Flexible Jobs. Real-Time Matching. Seamless Workforce Solutions.
+        </p>
+        <p className="mb-6">
+          1stJob is your go-to platform connecting businesses with peak-hour labor needs to individuals seeking flexible, short-term work opportunities.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button>Post a Job</Button>
+          <Button variant="outline">Find a Shift</Button>
+        </div>
+      </Section>
 
       {/* About Us with Image */}
       <section id="about">
         <Section title="About Us">
           <div className="flex flex-col md:flex-row gap-6 items-center">
             <motion.img
-              src= "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg"
+              src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg"
               alt="About Us"
               className="rounded-xl shadow-md w-full md:w-1/2"
               initial={{ opacity: 0, x: -60 }}
@@ -245,7 +242,7 @@ const Home = () => {
       <Section title="Key Features">
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <motion.img
-            src="https://www.pexels.com/photo/people-gathered-inside-one-room-2678468/"
+            src="https://images.pexels.com/photos/2678468/pexels-photo-2678468.jpeg"
             alt="Key Features"
             className="rounded-xl shadow-md w-full md:w-1/2"
             initial={{ opacity: 0, y: 50 }}
@@ -285,7 +282,6 @@ const Home = () => {
       </Section>
 
       {/* Why 1stJob */}
-      <section id="contact"></section>
       <Section title="Why 1stJob?">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
@@ -329,3 +325,4 @@ const Home = () => {
 };
 
 export default Home;
+
