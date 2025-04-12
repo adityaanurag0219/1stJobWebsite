@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-lg py-4 px-6 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <motion.img
-          src="/Logo.jpg"
+          src="/1stjobneww.jpg"
           alt="Logo"
           className="h-10 w-10 object-contain"
           initial={{ rotate: -10, opacity: 0 }}
