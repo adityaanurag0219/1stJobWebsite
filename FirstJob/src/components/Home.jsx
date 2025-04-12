@@ -165,6 +165,7 @@ const Home = () => {
       <HeroSlider />
 
       {/* Headline and Subheadline */}
+      <section id='home'>
       <Section title="Revolutionizing the Future of Work">
         <p className="text-xl font-medium mb-4">
           Flexible Jobs. Real-Time Matching. Seamless Workforce Solutions.
@@ -177,6 +178,8 @@ const Home = () => {
           <Button variant="outline">Find a Shift</Button>
         </div>
       </Section>
+      </section>
+      
 
       {/* About Us with Image */}
       <section id="about">
@@ -239,6 +242,7 @@ const Home = () => {
       </Section>
 
       {/* Key Features */}
+      <section id='features'>
       <Section title="Key Features">
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <motion.img
@@ -265,6 +269,8 @@ const Home = () => {
           </ul>
         </div>
       </Section>
+      </section>
+      
 
       {/* Target Industries */}
       <Section title="Businesses We Serve">
@@ -272,6 +278,7 @@ const Home = () => {
       </Section>
 
       {/* Persona Cards */}
+      <section id='contact'>
       <Section title="Who Can Work with 1stJob">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           <PersonaCard title="Students" desc="Earn on your schedule" icon="🎓" />
@@ -280,6 +287,8 @@ const Home = () => {
           <PersonaCard title="Unemployed" desc="Earn with dignity and flexibility" icon="🔍" />
         </div>
       </Section>
+      </section>
+      
 
       {/* Why 1stJob */}
       <Section title="Why 1stJob?">
