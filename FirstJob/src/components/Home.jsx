@@ -267,9 +267,9 @@ const Home = () => {
       </Section>
 
       {/* Target Industries */}
-      <Section title="Businesses We Serve">
+      {/* <Section title="Businesses We Serve">
         <IndustryTable />
-      </Section>
+      </Section> */}
 
       {/* Persona Cards */}
       <Section title="Who Can Work with 1stJob">
