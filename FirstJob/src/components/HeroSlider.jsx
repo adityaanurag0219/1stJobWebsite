@@ -5,8 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  "https://source.unsplash.com/1600x900/?workforce",
-  "https://source.unsplash.com/1600x900/?startup,teamwork",
+  "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
 ];
 
 const HeroSlider = () => (
