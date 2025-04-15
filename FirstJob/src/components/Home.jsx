@@ -36,7 +36,7 @@ const Home = () => {
       </section>
 
       {/* About Us with Image */}
-      <section id="about">
+      {/* <section id="about">
         <Section title="About Us">
           <div className="flex flex-col md:flex-row gap-6 items-center">
             <motion.img
@@ -60,7 +60,35 @@ const Home = () => {
             </div>
           </div>
         </Section>
-      </section>
+      </section> */}
+      <section id="about" className="py-12">
+  <Section title="About Us">
+    <div className="flex flex-col md:flex-row gap-10 items-center">
+      <motion.img
+        src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg"
+        alt="About Us"
+        className="w-full md:w-1/2 object-cover"
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+      />
+      <div className="space-y-4 text-base leading-relaxed">
+        <p className="font-medium text-lg">Powering Businesses, Empowering People.</p>
+        <p>
+          1stJob was created with a dual purpose: to support businesses that need adaptable,
+          on-demand staffing and to empower people searching for flexible income without being
+          locked into long-term contracts. 
+        </p>
+        <p>
+          Our platform is powered by smart technology that instantly matches workers with shifts
+          based on location, skillset, and availability. We’re here to remove the friction from
+          traditional hiring.
+        </p>
+      </div>
+    </div>
+  </Section>
+</section>
+
 
       {/* How It Works */}
       <Section title="How It Works">
@@ -108,7 +136,7 @@ const Home = () => {
       </Section>
 
       {/* Key Features */}
-      <section id='features'>
+      {/* <section id='features'>
         <Section title="Key Features">
           <div className="flex flex-col md:flex-row gap-6 items-center">
             <motion.img
@@ -135,7 +163,56 @@ const Home = () => {
             </ul>
           </div>
         </Section>
-      </section>
+      </section> */}
+      <section id="features">
+  <Section title="Key Features">
+    <div className="flex flex-col md:flex-row items-center gap-10">
+      {/* Image with hover zoom */}
+      <motion.div
+        className="overflow-hidden rounded-xl shadow-lg w-full md:w-1/2"
+        whileHover={{ scale: 1.02 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <img
+          src="https://images.pexels.com/photos/2678468/pexels-photo-2678468.jpeg"
+          alt="Key Features"
+          className="w-full h-auto object-cover rounded-xl"
+        />
+      </motion.div>
+
+      {/* Feature list with icons */}
+      <ul className="space-y-6 text-gray-700 w-full md:w-1/2">
+        <li className="flex items-start gap-4">
+          <span className="text-indigo-600 mt-1">⚡</span>
+          <p>
+            <strong>Real-Time Job Matching:</strong> AI-powered systems instantly connect businesses and workers based on location and skillset.
+          </p>
+        </li>
+        <li className="flex items-start gap-4">
+          <span className="text-indigo-600 mt-1">🧩</span>
+          <p>
+            <strong>Flexible Workforce Access:</strong> Seamlessly scale your team up or down—without the usual hiring headaches.
+          </p>
+        </li>
+        <li className="flex items-start gap-4">
+          <span className="text-indigo-600 mt-1">💼</span>
+          <p>
+            <strong>Worker Empowerment:</strong> Students, freelancers, and retirees can choose when and where they work.
+          </p>
+        </li>
+        <li className="flex items-start gap-4">
+          <span className="text-indigo-600 mt-1">⭐</span>
+          <p>
+            <strong>Ratings & Reviews:</strong> Build trust with transparent feedback loops for both businesses and workers.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </Section>
+</section>
+
 
 
       {/* Target Industries */}
@@ -144,7 +221,7 @@ const Home = () => {
       </Section> */}
 
       {/* Persona Cards */}
-      <section id='contact'>
+      {/* <section id='contact'>
         <Section title="Who Can Work with 1stJob">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             <PersonaCard title="Students" desc="Earn on your schedule" icon="🎓" />
@@ -153,7 +230,18 @@ const Home = () => {
             <PersonaCard title="Unemployed" desc="Earn with dignity and flexibility" icon="🔍" />
           </div>
         </Section>
-      </section>
+      </section> */}
+      <section id="contact">
+  <Section title="Who Can Work with 1stJob">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <PersonaCard title="Students" desc="Earn on your schedule" icon="🎓" />
+      <PersonaCard title="Freelancers" desc="Make use of your free hours" icon="💼" />
+      <PersonaCard title="Semi-Skilled Laborers" desc="Find hourly or daily jobs" icon="🔧" />
+      <PersonaCard title="Unemployed" desc="Earn with dignity and flexibility" icon="🔍" />
+    </div>
+  </Section>
+</section>
+
 
 
       {/* Why 1stJob */}

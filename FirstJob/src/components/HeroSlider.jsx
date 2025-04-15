@@ -45,7 +45,7 @@ const HeroSlider = () => (
               {slide.heading}
             </motion.h2>
             <motion.p
-              className="text-lg mt-4 max-w-2xl drop-shadow-sm"
+              className="font-bold text-3xl mt-4 max-w-2xl drop-shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.3 }}
