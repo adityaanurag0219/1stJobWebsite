@@ -231,7 +231,20 @@ const Home = () => {
           </div>
         </Section>
       </section> */}
-      <section id="contact">
+
+      {/* <section id="contact">
+  <Section title="Who Can Work with 1stJob">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <PersonaCard title="Students" desc="Earn on your schedule" icon="🎓" />
+      <PersonaCard title="Freelancers" desc="Make use of your free hours" icon="💼" />
+      <PersonaCard title="Semi-Skilled Laborers" desc="Find hourly or daily jobs" icon="🔧" />
+      <PersonaCard title="Unemployed" desc="Earn with dignity and flexibility" icon="🔍" />
+    </div>
+  </Section>
+</section> */}
+
+
+<section id="contact">
   <Section title="Who Can Work with 1stJob">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
       <PersonaCard title="Students" desc="Earn on your schedule" icon="🎓" />
@@ -241,6 +254,7 @@ const Home = () => {
     </div>
   </Section>
 </section>
+
 
 
 
